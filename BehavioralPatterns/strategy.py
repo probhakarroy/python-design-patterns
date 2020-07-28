@@ -26,18 +26,19 @@ def strategy_two(self):
     print(f'{self.name} is used to execute method 2')
 
 
-# Let's create our default Strategy
-s0 = Strategy()
-# Let's execute our default strategy
-s0.execute()
+if __name__ == "__main__":
+    # Let's create our default Strategy
+    s0 = Strategy()
+    # Let's execute our default strategy
+    s0.execute()
 
-# Let's create the first variation of our default strategy by providing a new behavior
-s1 = Strategy(strategy_one)
-# Let's set its name
-s1.name = 'Strategy One'
-# Let's execute the strategy
-s1.execute()
+    # Let's create the first variation of our default strategy by providing a new behavior
+    s1 = Strategy(strategy_one)
+    # Let's set its name
+    s1.name = 'Strategy One'
+    # Let's execute the strategy
+    s1.execute()
 
-s2 = Strategy(strategy_two)
-s2.name = 'Strategy Two'
-s2.execute()
+    s2 = Strategy(strategy_two)
+    s2.name = 'Strategy Two'
+    s2.execute()
